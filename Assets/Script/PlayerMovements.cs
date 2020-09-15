@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerMovements : MonoBehaviour
 {
     public float speed;
-    private Vector2 move;
     private Rigidbody2D rb;
+    private int x, y;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,31 +18,30 @@ public class PlayerMovements : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        move = new Vector2(0, 0);
+        x = y = 0;
         if (Input.GetKey("z"))
         {
-            move += new Vector2(0, 1*Time.deltaTime);
+            y = 1;
         }
         if (Input.GetKey("s"))
         {
-            move += new Vector2(0, -1*Time.deltaTime);
+            y = -1;
         }
         if (Input.GetKey("q")){
-            move += new Vector2(-1*Time.deltaTime, 0);
+
+            x = -1;
         }
         if (Input.GetKey("d"))
         {
-            move += new Vector2(1*Time.deltaTime, 0);
+            x = 1;
         }
-        Move(move);
+
+
+        Move(new Vector2(x,y));
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("ça marche ?");
-    }
     public void Move(Vector2 dir)
     {
-        rb.AddForce(speed * dir);
+        rb.velocity=speed * dir;
     }
 }
