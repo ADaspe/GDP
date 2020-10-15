@@ -95,11 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d556b13b84738644eb481b5ccd211c6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.05
+  speed: 30
   damage: 1
   enemies:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   environment:
     serializedVersion: 2
     m_Bits: 512

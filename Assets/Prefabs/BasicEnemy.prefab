@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7638874934996477573}
   - component: {fileID: 7638874934996477575}
   - component: {fileID: 8335616147178391294}
+  - component: {fileID: 6207267233355604664}
+  - component: {fileID: -133141969880395771}
   m_Layer: 10
   m_Name: BasicEnemy
   m_TagString: Untagged
@@ -125,6 +127,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 4915664371762849276, guid: 49763f47cf9d22f4388810f04aa08ad8, type: 3}
   fireZone: {fileID: 8252116738695483560}
+--- !u!114 &6207267233355604664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7638874934996477578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161a786c1b9a66544a21ef58483f51d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 2
+--- !u!114 &-133141969880395771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7638874934996477578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03aacf016fac0c544a0bf6d46d19446f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEmitter: 1
+  particles: {fileID: 8710194366456612539, guid: 63b1b96d863eb264b972006148d0f5b8, type: 3}
+  lifetime: 2
 --- !u!1 &8252116738695483560
 GameObject:
   m_ObjectHideFlags: 0

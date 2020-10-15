@@ -7,16 +7,15 @@ public class PlayerShoot : MonoBehaviour
 {
     bool isShooting;
     public GameObject projectile;
-    public Transform projectileOrigin;
-    float shootDelay;
+    public GameObject projectileOrigin;
+    public float shootDelay;
     private void Start()
     {
-        projectileOrigin = GetComponentInChildren<Transform>();
     }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("Space"))
+        if (Input.GetKey("space"))
         {
             if(!isShooting)
             {
@@ -28,7 +27,7 @@ public class PlayerShoot : MonoBehaviour
 
     public IEnumerator Shoot()
     {
-        Instantiate(projectile, transform.position, quaternion.identity);
+        Instantiate(projectile, projectileOrigin.transform.position, quaternion.identity);
         yield return new WaitForSeconds(shootDelay);
         isShooting = false;
     }

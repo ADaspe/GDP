@@ -6,6 +6,7 @@ public class PlayerLifeHandler : MonoBehaviour
 {
 
     public float maxHP;
+    [SerializeField]
     private float currentHP;
     public bool isDead;
     // Start is called before the first frame update
@@ -20,7 +21,15 @@ public class PlayerLifeHandler : MonoBehaviour
         currentHP -= damage;
         if (currentHP <= 0)
         {
-            isDead = true;
+            Die();
         }
+    }
+
+    public void Die()
+    {
+        isDead = true;
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<ParticleBehavior>().Burst();
+        GameObject.Destroy(gameObject);
     }
 }

@@ -16,12 +16,20 @@ public class PlayerProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(speed, 0, 0), Space.World);
+        transform.Translate(new Vector3(speed, 0, 0)*Time.deltaTime, Space.World);
 
         Collider2D[] hit = Physics2D.OverlapBoxAll(transform.position, size, enemies);
         foreach (Collider2D enemy in hit)
         {
-            enemy.GetComponent<EnemyDie>().Damage(damage);
+            if (enemy.GetComponent<EnemyDie>())
+            {
+                enemy.GetComponent<EnemyDie>().Damage(damage);
+                GameObject.Destroy(gameObject);
+            }
+        }
+        Collider2D wall = Physics2D.OverlapBox(transform.position, size, environment);
+        if (wall)
+        {
             GameObject.Destroy(gameObject);
         }
     }
