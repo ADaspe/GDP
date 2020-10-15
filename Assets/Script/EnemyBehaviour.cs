@@ -26,6 +26,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     IEnumerator ShootBurst()
     {
+
         Shoot();
         yield return new WaitForSeconds(0.3f);
         Shoot();
@@ -37,6 +38,6 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Shoot()
     {
-        Instantiate(bullet, fireZone.transform);
+        Instantiate(bullet, fireZone.transform.position, new Quaternion());
     }
 }
