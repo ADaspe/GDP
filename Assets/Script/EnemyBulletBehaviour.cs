@@ -25,9 +25,6 @@ public class EnemyBulletBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Coucou");
-
-        Debug.Log("Layer : "+ (collision.gameObject.layer == LayerMask.NameToLayer("Player")));
         if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             collision.gameObject.GetComponent<PlayerLifeHandler>().LoseLife();
