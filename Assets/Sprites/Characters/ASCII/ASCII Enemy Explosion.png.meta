@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 3336a547d50070b4c8ffe1cd9213ab88
+guid: 96be982b8c4369d418f3c50da9d595ef
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2938384181821865069
-    second: ASCII Enemy Kamikaze (1)_0
-  - first:
-      213: -3407327480532789092
-    second: ASCII Enemy Kamikaze (1)_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,7 +47,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
-  spriteBorder: {x: 8, y: 2, z: 0, w: 7}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -72,7 +66,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -84,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,28 +87,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: ASCII Enemy Kamikaze (1)_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 9
-        width: 8
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39381e4a723c837d0800000000000000
-      internalID: -2938384181821865069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

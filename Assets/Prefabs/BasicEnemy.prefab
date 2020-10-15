@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7638874934996477573}
   - component: {fileID: 7638874934996477575}
   - component: {fileID: 8335616147178391294}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5547470701147421187}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FireZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
