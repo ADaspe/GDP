@@ -42,6 +42,6 @@ public class PlayerMovements : MonoBehaviour
 
     public void Move(Vector2 dir)
     {
-        rb.velocity=speed * dir;
+        rb.velocity=speed * dir * Time.deltaTime;
     }
 }
